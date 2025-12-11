@@ -590,7 +590,8 @@ class RobotBackend(Backend):
         """
         assert self.c is not None, "Motor controller not initialized or already closed."
 
-        return self.c.write_raw_packet(packet)
+        result: bytes = self.c.write_raw_packet(packet)
+        return result
 
 
 @dataclass
