@@ -582,11 +582,9 @@ class RobotBackend(Backend):
         """Write a raw packet to the motor controller and return the response.
 
         Args:
-
             packet (bytes): The raw packet to send to the motor controller.
 
         Returns:
-
             bytes: The raw response packet from the motor controller.
 
         """
